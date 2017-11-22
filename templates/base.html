@@ -21,26 +21,26 @@
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="index.html">SOLSERV</a>
+    <a class="navbar-brand" href="http://127.0.0.1:5000/">SOLSERV</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="http://127.0.0.1:5000/">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Painel de Controle</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="charts.html">
-            <i class="fa fa-fw fa-area-chart"></i>
-            <span class="nav-link-text">Gráficos</span>
-          </a>
-        </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+                <a class="nav-link" href="http://127.0.0.1:5000/charts">
+                        <i class="fa fa-fw fa-area-chart"></i>
+                        <span class="nav-link-text">Gráficos</span>
+                </a>
+            </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="tables.html">
+          <a class="nav-link" href="http://127.0.0.1:5000/tables">
             <i class="fa fa-fw fa-table"></i>
             <span class="nav-link-text">Tabelas</span>
           </a>
@@ -101,8 +101,9 @@
           </form>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="http://127.0.0.1:5000/login">
             <i class="fa fa-fw fa-sign-out"></i>Sair</a>
+                <a/>
         </li>
       </ul>
     </div>
@@ -114,6 +115,9 @@
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
       <div class="container">
+        <div class="text-center">
+          <small>SOLSERV © site 2017</small>
+        </div>
       </div>
     </footer>
     <!-- Scroll to Top Button-->
@@ -133,7 +137,7 @@
           <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="login.html">Sair</a>
+            <a class="btn btn-primary" href="http://127.0.0.1:5000/login">Sair</a>
           </div>
         </div>
       </div>

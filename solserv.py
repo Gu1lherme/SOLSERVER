@@ -65,10 +65,12 @@ def register():
     return render_template('register.html')
 
 @app.route('/tables')
+@flask_login.login_required
 def tables():
     return render_template('tables.html')
 
 @app.route('/charts')
+@flask_login.login_required
 def charts():
     return render_template('charts.html')
 

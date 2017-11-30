@@ -37,7 +37,7 @@ def protected():
     return redirect(url_for('index'))
 
 
-@app.route('/')
+@app.route('/index')
 @flask_login.login_required
 def index():
     return render_template('index.html')
@@ -55,7 +55,7 @@ def user_loader(email):
     user.id = email
     return user
 
-@app.route('/logout')
+@app.route('/login')
 def logout():
     flask_login.logout_user()
     return redirect(url_for('login'))

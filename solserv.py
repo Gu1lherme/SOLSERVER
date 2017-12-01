@@ -37,7 +37,7 @@ def protected():
     return redirect(url_for('index'))
 
 
-@app.route('/index')
+@app.route('/')
 @flask_login.login_required
 def index():
     return render_template('index.html')

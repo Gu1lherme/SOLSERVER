@@ -9,31 +9,55 @@
         <li class="breadcrumb-item active">Cliente</li>
       </ol>
               <br>
-              <select class="form-control form-control-sm">
-                <option>--Seleionar Serviço--</option>
-                  <option>Sem acesso a internet</option>
-            </select>
-             <br>
-            <select class="form-control form-control-sm">
-                <option>--Seleionar Serviço--</option>
-            </select>
-              <br>
-            <select class="form-control form-control-sm">
-                 <option>--Seleionar Serviço--</option>
-            </select>
-              <br>
-            <div class="form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                     Selecionar serviço
-                </label>
+         <div class="form-group">
+            <label for="exampleSelect1">Problema</label>
+             <select id="exampleSelect1" class="form-control form-control-sm">
+                 <option></option>
+                 <option>Instalaçõa de software e impressora</option>
+                 <option>Problemas com a internet</option>
+                 <option></option>
+             </select>
+         </div>
+          <div class="form-group">
+                <label for="exampleSelect1">Local</label>
+                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Ex: Empresa">
             </div>
-            <div class="form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                         Selecionar serviço
-                </label>
+           <div class="form-group">
+                <label for="exampleSelect1">Telefone para Contato</label>
+                <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Ex: (69) 99000-0000">
             </div>
+        <div class="form-group" >
+            <label for="example-datetime-local-input" class="col-xs-2 col-form-label" >Data e Hora</label>
+            <div class="col-xs-10">
+                <input class="form-control" type="datetime-local" value="2017-12-03T13:45:00" id="example-datetime-local-input">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exampleTextarea">Descrição do Problema:</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        </div>
+        <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="/index">
+              <button href="/index">Cancelar</button>
+            <button href="/index">Solicitar Chamado</button>
+        </a>
+    </div>
+ <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Pronto para partir?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Selecione "Sair" abaixo se você estiver pronto para terminar sua sessão atual.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+            <a class="btn btn-primary" href="/index">Sair</a>
+          </div>
+        </div>
+      </div>
     </div>
 </body>
 
